@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menus {
+    display: flex;
+}
+
+.menus * {
+    list-style: none;
+}
