@@ -22,7 +22,7 @@ const useWindowSize = () => {
 export const Navbar = () => {
   const [width] = useWindowSize();
   const [isMobile, setIsMobile] = useState(width <= 590);
-  const [isToggle, setIsToggle] = useState(true);
+  const [isToggle, setIsToggle] = useState(false);
 
   const handleToggle = (e) => {
     e.preventDefault();
