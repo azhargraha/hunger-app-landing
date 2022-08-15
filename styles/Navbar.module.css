@@ -1,16 +1,53 @@
 .container {
+    background-color: white;
+    z-index: 1;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
+    padding: 1rem 2rem;
 }
 
 .logo {
     flex: 1;
 }
 
-.menus {
-    display: flex;
+.toggle {
+    all: unset;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    background-size: cover;
 }
 
-.menus * {
-    list-style: none;
+.logo a {
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.menus_close {
+    margin: 0;
+    display: flex;
+    width: 18rem;
+    justify-content: space-between;
+}
+
+.menus_open {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding: 2.4rem 2rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menus_open li a {
+    font-size: 1.2rem;
 }
