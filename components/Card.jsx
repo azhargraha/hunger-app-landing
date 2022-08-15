@@ -4,15 +4,18 @@ import styles from '../styles/Card.module.css';
 
 export const Card = ({ city, rating, title, body, img }) => {
   return (
-    <div>
-        <h4>{city}</h4>
-        <picture>
-            <source srcSet={img} type="image/" />
-            <img src={img} alt={title} />
+    <div className={styles.container}>
+        <picture className={styles.thumbnail}>
+          <div className={styles.city}>
+            <h5>{city}</h5>
+          </div>
+          <img src={img} alt={title} />
         </picture>
-        <h4>Rating: {rating}</h4>
-        <h3>{title}</h3>
-        <p>{body}</p>
+        <section className={styles.body}>
+          <h5>Rating: {rating}</h5>
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </section>
     </div>
-  )
+  );
 };
