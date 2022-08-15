@@ -12,21 +12,21 @@ export default function Home() {
       rating: 4.5,
       title: 'Lorem Ipsum Dolor',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.',
-      img: 'https://cdn.dribbble.com/users/250507/screenshots/13980835/media/a2d7c309e90872f866727f04b3f5a7ff.jpg?compress=1&resize=400x300'
+      img: 'https://i.pinimg.com/564x/4f/a1/d9/4fa1d99d94bf062fd0aa8bac1b228837.jpg'
     },
     {
       city: 'Kota Bandung',
       rating: 4.5,
       title: 'Lorem Ipsum Dolor',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.',
-      img: 'https://cdn.dribbble.com/users/250507/screenshots/13980835/media/a2d7c309e90872f866727f04b3f5a7ff.jpg?compress=1&resize=400x300'
+      img: 'https://i.pinimg.com/564x/df/83/ee/df83ee083874e8610ae39192b80d8c34.jpg'
     },
     {
       city: 'Kota Bandung',
       rating: 4.5,
       title: 'Lorem Ipsum Dolor',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.',
-      img: 'https://cdn.dribbble.com/users/250507/screenshots/13980835/media/a2d7c309e90872f866727f04b3f5a7ff.jpg?compress=1&resize=400x300'
+      img: 'https://i.pinimg.com/564x/be/88/cb/be88cbd69d15166de000274a9d821cbe.jpg'
     },
   ];
 
@@ -40,10 +40,10 @@ export default function Home() {
 
       <Navbar />
 
-      <main className={styles.main}>
+      <main>
         <Hero />
-        <section>
-          <h3>Explore Restaurant</h3>
+        <section className={styles.explore}>
+          <h2>Explore Restaurant</h2>
           <div className={styles.cards}>
             {
               restaurantData.map((data, i) => (
