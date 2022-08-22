@@ -12,7 +12,7 @@ export const Card = ({ city, rating, title, body, img }) => {
           <img src={img} alt={title} />
         </picture>
         <section className={styles.body}>
-          <h5>Rating: {rating}</h5>
+          <h5>Id: {rating}</h5>
           <h3>{title}</h3>
           <p>{body}</p>
         </section>
