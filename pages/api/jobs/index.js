@@ -16,6 +16,7 @@ export default function handler(req, res) {
             });
 
             res.status(200).json(jobs);
+            break;
         default:
             res.setHeader('Allow', ['GET', 'POST']);
             res.status(405).end(`Method ${req.method} not allowed`);
