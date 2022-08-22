@@ -4,8 +4,10 @@ import styles from '../styles/Home.module.css';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { Card } from '../components/Card';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [jobsData, setJobsData] = useState([]);
   const restaurantData = [
     {
       city: 'Kota Bandung',
@@ -30,6 +32,22 @@ export default function Home() {
     },
   ];
 
+  async function fetchData() {
+    const res = await fetch('/api/jobs');
+    const data = await res.json();
+    const jobs = data.map(item => ({
+        ...item,
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.',
+        img: restaurantData[item.id - 1].img
+      }));
+
+    setJobsData(jobs);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -46,8 +64,8 @@ export default function Home() {
           <h2>Explore Restaurant</h2>
           <div className={styles.cards}>
             {
-              restaurantData.map((data, i) => (
-                <Card key={i} city={data.city} rating={data.rating} title={data.title} body={data.body} img={data.img} />
+              jobsData.map((data, i) => (
+                <Card key={i} city={data.location} rating={data.id} title={data.title} body={data.company} img={data.img} />
               ))
             }
           </div>
