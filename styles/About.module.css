@@ -1,0 +1,22 @@
+.restaurants {
+    height: 100%;
+    min-height: 88vh;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.restaurants h2 {
+    margin-bottom: 2.4rem;
+}
+
+.cards {
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

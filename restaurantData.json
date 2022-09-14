@@ -1,0 +1,184 @@
+{
+    "restaurants": [
+        {
+            "id": 1,
+            "city": "Kota Bandung",
+            "rating": 4.5,
+            "title": "7 Spices Carribean Restaurant",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.",
+            "img": "https://i.pinimg.com/564x/4f/a1/d9/4fa1d99d94bf062fd0aa8bac1b228837.jpg",
+            "menus": [
+                {
+                "price": "$10.00",
+                "name": "Jerk Chicken",
+                "description": "with Macaroni and Cheese"
+                },
+                {
+                "price": "$12.00",
+                "name": "Goat",
+                "description": "with Vegetables, Macaroni and Cheese"
+                },
+                {
+                "price": "$9.00",
+                "name": "Pasta",
+                "description": "with Baked Chicken"
+                },
+                {
+                "price": "$12.00",
+                "name": "Seafood Pasta",
+                "description": ""
+                },
+                {
+                "price": "$13.00",
+                "name": "Oxtail",
+                "description": ""
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "city": "Kota Jakarta",
+            "rating": 4.8,
+            "title": "809 Sangria Bar & Grill",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.",
+            "img": "https://i.pinimg.com/564x/df/83/ee/df83ee083874e8610ae39192b80d8c34.jpg",
+            "menus": [
+                {
+                "price": "$1.50",
+                "name": "Pork Egg Roll 1 Pc",
+                "description": ""
+                },
+                {
+                "price": "$5.75",
+                "name": "Roast Pork",
+                "description": ""
+                },
+                {
+                "price": "$1.50",
+                "name": "Shrimp Egg Roll 1 Pc",
+                "description": ""
+                },
+                {
+                "price": "$7.50",
+                "name": "Bar B Q Spare Ribs",
+                "description": ""
+                },
+                {
+                "price": "$3.50",
+                "name": "Fried Wontons 10 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$4.25",
+                "name": "Cheese Wontons 8 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$5.50",
+                "name": "Fried or Steamed Dumplings 8 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$4.00",
+                "name": "Fried Onion Rings 20 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$1.50",
+                "name": "Fantail Jumbo Shrimp",
+                "description": "Each."
+                },
+                {
+                "price": "$4.00",
+                "name": "Fried Apple Sticks 20 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$5.00",
+                "name": "Sugar Biscuits 10 Pcs",
+                "description": ""
+                },
+                {
+                "price": "$2.00",
+                "name": "French Fries",
+                "description": ""
+                },
+                {
+                "price": "$4.00",
+                "name": "Fried Yellow Plantain",
+                "description": ""
+                },
+                {
+                "price": "$4.00",
+                "name": "Fried Green Plantain",
+                "description": ""
+                },
+                {
+                "price": "$7.00",
+                "name": "Boneless B B Q Spare Ribs",
+                "description": ""
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "city": "Kota Bali",
+            "rating": 4.7,
+            "title": "187th St Pizza",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat ligula sapien, in tincidunt urna aliquam a. Cras in efficitur est, ultrices semper justo.",
+            "img": "https://i.pinimg.com/564x/be/88/cb/be88cbd69d15166de000274a9d821cbe.jpg",
+            "menus": [
+                {
+                "price": "$4.00",
+                "name": "Mozzarella Sticks (6 Pcs)",
+                "description": ""
+                },
+                {
+                "price": "$7.00",
+                "name": "Buffalo Wings (10 Pcs)",
+                "description": ""
+                },
+                {
+                "price": "$3.00",
+                "name": "Order Friend Fries",
+                "description": "With your choice of dressing"
+                },
+                {
+                "price": "$2.00",
+                "name": "Garlic Bread",
+                "description": ""
+                },
+                {
+                "price": "$3.00",
+                "name": "Garlic Bread with Cheese",
+                "description": ""
+                },
+                {
+                "price": "$2.50",
+                "name": "Beef Patty Regular",
+                "description": ""
+                },
+                {
+                "price": "$3.50",
+                "name": "Beef Patty with Cheese",
+                "description": ""
+                },
+                {
+                "price": "$5.00",
+                "name": "Beef Patty with Cheese and Coco Bread",
+                "description": ""
+                },
+                {
+                "price": "$1.00",
+                "name": "Sepolis (4 Pcs)",
+                "description": ""
+                },
+                {
+                "price": "$1.00",
+                "name": "Galines D (4 Pcs)",
+                "description": ""
+                }
+            ]
+        }
+    ]
+}

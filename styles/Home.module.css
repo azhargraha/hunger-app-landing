@@ -19,10 +19,3 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-
-.footer {
-  display: flex;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
