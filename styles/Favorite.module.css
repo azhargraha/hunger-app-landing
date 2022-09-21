@@ -9,8 +9,63 @@
     justify-content: flex-start;
 }
 
-.menus {
-    padding: 0;
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h2 {
+    margin: .8rem 0;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+}
+
+.counter h5 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.plus, .minus {
+    all: unset;
+    position: relative;
+    border-radius: 500rem;
+    height: 1rem;
+    width: 1rem;
+    border: 2px solid green;
+}
+
+.plus::after, .minus::after {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: green;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+.plus::after {
+    content: '+';
+}
+
+.minus::after {
+    content: '-';
+}
+
+.minus:disabled {
+    border: 2px solid gray;
+}
+
+.minus:disabled::after {
+    color: gray;
 }
 
 .restaurants {
