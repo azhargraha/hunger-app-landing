@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { useSession, signIn, signOut, getSession } from 'next-auth/react';
 import styles from '../styles/Account.module.css';
 import Image from 'next/image';
 
@@ -27,5 +27,15 @@ const Account = () => {
         </div>
     )
 };
+
+export const getServerSideProps = async (context) => {
+    const session = await getSession(context);
+
+    return {
+        props: {
+            session
+        }
+    }
+}
 
 export default Account;
