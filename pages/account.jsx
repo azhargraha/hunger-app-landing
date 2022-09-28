@@ -3,8 +3,8 @@ import { useSession, signIn, signOut, getSession } from 'next-auth/react';
 import styles from '../styles/Account.module.css';
 import Image from 'next/image';
 
-const Account = () => {
-    const { data: session } = useSession();
+const Account = ({ session }) => {
+    // const { data: session } = useSession();
     
     if (session) {
         return (
