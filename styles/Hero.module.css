@@ -11,7 +11,21 @@
     object-position: center 40%;
 }
 
+.container::after {
+    pointer-events: none;
+    z-index: 0;
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .4;
+}
+
 .heading {
+    z-index: 1;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -19,7 +33,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    opacity: .9;
+    padding: 2rem;
 }
 
 .heading * {
@@ -27,6 +41,25 @@
 }
 
 .heading h1 {
+    text-align: center;
     margin: 0;
     font-size: 3.5rem;
+}
+
+.heading p {
+    text-align: center;
+    width: 100%;
+    max-width: 40rem;
+    
+}
+
+.heading a {
+    background-color: rgb(209, 44, 44);
+    padding: .5rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.heading a:hover {
+    font-weight: 500;
 }

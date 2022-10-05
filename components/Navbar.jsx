@@ -3,6 +3,7 @@ import Image from 'next/image';
 React.useLayoutEffect = React.useEffect;
 import styles from '../styles/Navbar.module.css';
 import Link from "next/link";
+import { useSession } from 'next-auth/react';
 
 import hamburgerOpen from '../public/assets/hamburger-open.svg';
 import hamburgerClose from '../public/assets/hamburger-close.svg';
@@ -21,6 +22,7 @@ const useWindowSize = () => {
 };
 
 export const Navbar = () => {
+  const { data: session } = useSession();
   const [width] = useWindowSize();
   const [isMobile, setIsMobile] = useState(width <= 590);
   const [isToggle, setIsToggle] = useState(false);
@@ -41,7 +43,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.logo}>
-        <a href="#">Hunger Apps</a>
+        <Link href="/">Tel-U</Link>
       </div>
       {
         isMobile ? 
@@ -49,18 +51,15 @@ export const Navbar = () => {
             <Image src={isToggle ? hamburgerClose : hamburgerOpen} alt="test" />
           </button> :
           <ul className={styles.menus_close}>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/favorite">Favorite</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/account">Account</Link></li>
+            <li><Link href="https://github.com/azhargraha/hunger-app-landing" passHref><a target="_blank" rel="noopener noreferrer">Github</a></Link></li>
+            <li><Link href="/account">{session ? session.user.name : 'Sign in'}</Link></li>
           </ul>
       }
       {
         (isToggle && isMobile) &&
           <ul className={styles.menus_open}>
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/favorite">Favorite</Link></li>
-            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="https://github.com/azhargraha/hunger-app-landing" passHref><a target="_blank" rel="noopener noreferrer">Github</a></Link></li>
+            <li><Link href="/account">Sign in</Link></li>
           </ul>
       }
     </nav>

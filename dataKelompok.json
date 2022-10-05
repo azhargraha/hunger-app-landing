@@ -1,0 +1,21 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "city": "Kota Bandung",
+        "nim": "1301194064",
+        "title": "Azhar Nugraha Darajat",
+        "body": "Computer Science Student at Telkom University",
+        "img": "https://media-exp1.licdn.com/dms/image/C5603AQGJP_e0qBV_Vw/profile-displayphoto-shrink_200_200/0/1607158616326?e=1670457600&v=beta&t=_SAdz_COpjhmBrjO1Rzj158FaYHrFZ9lt-dwVNvZj8I"
+      },
+      {
+        "id": 2,
+        "city": "Kota Depok",
+        "nim": "1301194330",
+        "title": "Muhammad Mirza Rizkiawan",
+        "body": "Undergraduate Informatics student at Telkom University",
+        "img": "https://media-exp1.licdn.com/dms/image/C5603AQFipJQyU00ECA/profile-displayphoto-shrink_200_200/0/1607545461008?e=1670457600&v=beta&t=t8i7vZ6CbTpkt2wVtRq4XxVDJXkzKZ9jOby6DD3nq6I"
+      }
+    ]
+  }
+  

@@ -29,8 +29,7 @@
 .menus_close {
     margin: 0;
     display: flex;
-    width: 22rem;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .menus_open {

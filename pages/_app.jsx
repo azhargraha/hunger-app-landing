@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps, session }) {
     <Navbar />
     <Component {...pageProps} />
     <footer className="footer">
-        <p>copyright @ 2020 - Hunger Apps</p>
+        <p>copyright @ 2022 - Tel-U</p>
     </footer>
   </SessionProvider>)
 }

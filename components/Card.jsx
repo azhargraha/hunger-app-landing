@@ -1,11 +1,10 @@
-import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Card.module.css';
-import Link from 'next/link';
 
-export const Card = ({ id, city, rating, title, body, img, menus }) => {
+export const Card = ({ id, city, nim, title, body, img, menus }) => {
   return (
-    <Link href={'/favorite/' + id} passHref>
+    <Link href='/' passHref>
       <a>
         <div className={styles.container}>
             <picture className={styles.thumbnail}>
@@ -15,7 +14,7 @@ export const Card = ({ id, city, rating, title, body, img, menus }) => {
               <img src={img} alt={title} />
             </picture>
             <section className={styles.body}>
-              <h5>Rating: {rating}</h5>
+              <h5>NIM: {nim}</h5>
               <h3>{title}</h3>
               <p>{body}</p>
               {
